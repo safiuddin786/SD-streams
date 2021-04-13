@@ -30,4 +30,4 @@ def episode():
 	return jsonify(stream_link)
 
 if __name__ == '__main__':
-	app.run(port='5000')
+	app.run(host="0.0.0.0",)
