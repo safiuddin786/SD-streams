@@ -19,7 +19,7 @@ def search_anime(search_data):
 			link = re.findall('/category(.*)', link)[0]
 			img = temp.find('div', class_='img').a.img['src']
 			release = re.search('Released: .*\S',temp.find('p', class_='released').string)
-			data['tilte'] = str(title)
+			data['title'] = str(title)
 			data['link'] = str(link)
 			data['img'] = str(img)
 			data['release'] = str(release.group(0))
