@@ -1,0 +1,16 @@
+beautifulsoup4==4.9.3
+cchardet==2.1.7
+certifi==2020.12.5
+chardet==4.0.0
+click==7.1.2
+Flask==1.1.2
+idna==2.10
+itsdangerous==1.1.0
+Jinja2==2.11.3
+lxml==4.6.3
+mal-api==0.4.0
+MarkupSafe==1.1.1
+requests==2.25.1
+soupsieve==2.2.1
+urllib3==1.26.4
+Werkzeug==1.0.1
