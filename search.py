@@ -18,14 +18,17 @@ def search_anime(search_data):
 			link = temp.find('a', href=True)['href']
 			link = re.findall('/category(.*)', link)[0]
 			img = temp.find('div', class_='img').a.img['src']
-			try:
-				release = re.search('Released: .*\S',temp.find('p', class_='released').string)
-			except:
+
+			check = temp.find('p', class_='released').string
+			if(re.sub("[^0-9a-zA-Z]+", "", check) == ''):
 				release = 'N/A'
+			else:
+				release = re.search('Released: .*\S',check).group(0)
+
 			data['title'] = str(title)
 			data['link'] = str(link)
 			data['img'] = str(img)
-			data['release'] = str(release.group(0))
+			data['release'] = str(release)
 			output.append(data)
 		return output
 		# search_anime('naruto')

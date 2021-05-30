@@ -15,7 +15,8 @@ def details(anime_name):
 	total_episodes = str(selected.episodes)
 	if total_episodes == 'None' or dub:
 		session = requests.Session()
-		link = re.sub("[^0-9a-zA-Z]+", "", title).lower()
+		link = title.replace(' ','-')
+		link = re.sub("[^0-9a-zA-Z\-]+", "", link).lower()
 		if dub:
 			link = link + 'dub'
 		try:
