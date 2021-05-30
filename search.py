@@ -18,7 +18,10 @@ def search_anime(search_data):
 			link = temp.find('a', href=True)['href']
 			link = re.findall('/category(.*)', link)[0]
 			img = temp.find('div', class_='img').a.img['src']
-			release = re.search('Released: .*\S',temp.find('p', class_='released').string)
+			try:
+				release = re.search('Released: .*\S',temp.find('p', class_='released').string)
+			except:
+				release = 'N/A'
 			data['title'] = str(title)
 			data['link'] = str(link)
 			data['img'] = str(img)
