@@ -18,7 +18,7 @@ def details(anime_name):
 		link = title.replace(' ','-')
 		link = re.sub("[^0-9a-zA-Z\-]+", "", link).lower()
 		if dub:
-			link = link + 'dub'
+			link = link + '-dub'
 		try:
 			response = session.get('https://www1.gogoanime.ai/category/' + link)
 			strainer = SoupStrainer('div', attrs={'class': 'anime_video_body'})
