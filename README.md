@@ -11,18 +11,18 @@ Scrapes anime from anime streaming sources
 * * *
 
 ## Features
-<table>
+<table align=center>
 	 <tbody>
  	<tr> 
-    <td colspan = 2>  <center> <h4>Search anime series and movies <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/search_screen.jpg?raw=true" alt="drawing" width="200"/> </center> </td>
+    <td colspan = 2 align=center>   <h4>Search anime series and movies <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/search_screen.jpg?raw=true" alt="drawing" width="200"/>  </td>
         </tr>
         <tr> 
-    <td colspan = 2>  <center> <h4>In App Video Player <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/player_fullscreen.jpg?raw=true" alt="drawing" width="600"/> </center>  
-        <center> <h5> <i> Video Player Configuration </i> <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/player_config.jpg?raw=true" alt="drawing" width="600"/> </center></td>
+    <td colspan = 2 align=center>   <h4>In App Video Player <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/player_fullscreen.jpg?raw=true" alt="drawing" width="600"/>   
+         <p align=center><h5> <i> Video Player Configuration </i> <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/player_config.jpg?raw=true" alt="drawing" width="600"/> </td></p>
         </tr>
         <tr> 
-    <td>  <center> <h4>Home Screen <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/home_screen.jpg?raw=true" alt="drawing" width="200" style="border:2px solid #d9d9d9"/> </center> </td>
-    <td> <center> <h4>Anime details & Episode List <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/anime_screen.jpg?raw=true" alt="drawing" width="200"/> </center> </td>
+    <td align=center>   <h4>Home Screen <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/home_screen.jpg?raw=true" alt="drawing" width="200"/>  </td>
+    <td align=center>  <h4>Anime details & Episode List <br> </br><img src="https://github.com/safiuddin786/SD-streams/blob/master/screenshots/anime_screen.jpg?raw=true" alt="drawing" width="200"/>  </td>
         </tr>
     </tbody>
 </table>
