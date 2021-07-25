@@ -1,23 +1,23 @@
 import requests
 from bs4 import BeautifulSoup, SoupStrainer
-import cchardet
 import re
 
 def stream_links(link,episode):
 	session = requests.Session()
-	response = session.get('https://gogoanime.ai' + link + '-episode-' + episode)
+	response = session.get('https://gogoanime.pe/' + link + '-episode-' + episode)
 
-	strainer = SoupStrainer('div', attrs={'class' : 'favorites_book'})
+	strainer = SoupStrainer('div', attrs={'class' : 'anime_video_body'})
 	soup = BeautifulSoup(response.content, 'lxml', parse_only=strainer)
 
 	try:
-		link = soup.ul.li.a.get('href')
-
-		response_link = session.get(link)
-		strainer = SoupStrainer('div', attrs={'class' : 'dowload'})
-		soup = BeautifulSoup(response_link.content, 'lxml', parse_only=strainer)
-
-		links = [a['href'] for a in soup.find_all('a', href=True)]
-		return links[0]
+		links = {}
+		
+		x = soup.find('div', attrs={'class': 'anime_muti_link'})
+		temp = x.find('ul').findAll('li')
+		for t in temp:
+			type = t.get('class')[0]
+			link = t.find('a')['data-video']
+			links[type] = link
+		return links
 	except:
 		return None

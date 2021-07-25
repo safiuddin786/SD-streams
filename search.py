@@ -1,13 +1,12 @@
 import requests
 from bs4 import BeautifulSoup, SoupStrainer
-import cchardet
 import re
 
 def search_anime(search_data):
 	output = []
 	session = requests.Session()
 	try:
-		response = session.get('https://www1.gogoanime.ai//search.html?keyword=' + search_data)
+		response = session.get('https://gogoanime.pe//search.html?keyword=' + search_data)
 
 		strainer = SoupStrainer('div', attrs={'class' : 'last_episodes'})
 		soup = BeautifulSoup(response.content, 'lxml', parse_only=strainer)

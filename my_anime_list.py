@@ -20,7 +20,7 @@ def details(anime_name):
 		if dub:
 			link = link + 'dub'
 		try:
-			response = session.get('https://www1.gogoanime.ai/category/' + link)
+			response = session.get('https://gogoanime.pe/category/' + link)
 			strainer = SoupStrainer('div', attrs={'class': 'anime_video_body'})
 			soup = BeautifulSoup(response.content, 'lxml', parse_only=strainer)
 			total_episodes = soup.find('ul', id="episode_page").findAll('li')
