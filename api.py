@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup, SoupStrainer
 import cchardet
 import re
+import requests_random_user_agent
 from search import search_anime
 from my_anime_list import details
 from stream import stream_links

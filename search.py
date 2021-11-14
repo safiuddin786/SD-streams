@@ -1,4 +1,5 @@
 import requests
+import requests_random_user_agent
 from bs4 import BeautifulSoup, SoupStrainer
 import re
 

@@ -1,5 +1,6 @@
 from mal import *
 from bs4 import BeautifulSoup, SoupStrainer
+import requests_random_user_agent
 import requests
 import re
 
