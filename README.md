@@ -2,7 +2,7 @@
 
 You can download Android version of the Application by clicking the "*Download App*" button below.
 ### [Download App](https://github.com/safiuddin786/SD-streams/releases/download/v1.1/Sdflix.v1.1.apk)
-**Note:** Apple users, our developers are working on develop IOS version of this Application.
+**Note:** Apple users, our developers are working on developing the IOS version of this Application. Expecting to be released with the next version.
 
 
 ## Description
